@@ -17,5 +17,4 @@ jobs:
           FTP_SERVER: ${{ secrets.FTP_SERVER }}     # FTPサーバーのURLを設定
           FTP_USERNAME: ${{ secrets.FTP_USERNAME }} # FTPのユーザー名を設定
           FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }} # FTPのパスワードを設定
-
-
+          REMOTE_DIR: /                             # リモートのどのディレクトリにアップロードするか
