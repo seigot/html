@@ -19,6 +19,6 @@ function sample(){
     var str = getData + "、と、見せかけて、" + getData2;
 
     console.log(str);
-
+    // test
     document.getElementById("area1").innerText = str;
 }
