@@ -1,1 +1,13 @@
-test
+on:
+  push:                 # プッシュした時に実行
+    branches:           # ブランチを指定
+      - master          # feature/testブランチ
+name: Build and Deploy  # アクションの名称
+jobs:
+  FTP-Deploy-Action:
+    name: FTP-Deploy-Action     # JOBの名前
+    runs-on: ubuntu-latest      # 仮想環境の種類を指定
+    steps:
+      - uses: actions/checkout@master   # リポジトリのデータを仮想環境にチェックアウトしてくるアクションを実行する
+        run: ls
+        
