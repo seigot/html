@@ -10,4 +10,3 @@ jobs:
     steps:
       - uses: actions/checkout@master   # リポジトリのデータを仮想環境にチェックアウトしてくるアクションを実行する
         run: ls
-        
